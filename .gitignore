@@ -1,0 +1,37 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local run/test files
+app-run*.log
+app-run.pid
+
+# .NET
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+artifacts/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

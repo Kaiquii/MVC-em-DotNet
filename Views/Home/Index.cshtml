@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<section class="home-shell">
+    <div class="home-hero">
+        <div class="hero-copy">
+            <span class="hero-kicker">Cadastro N1</span>
+            <h1>Clientes e produtos em um fluxo simples</h1>
+            <p>Cadastre clientes, registre produtos e mantenha cada produto vinculado ao cliente correto.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" asp-controller="Products" asp-action="Create">Novo Produto</a>
+                <a class="btn btn-outline-primary" asp-controller="Clients" asp-action="Create">Novo Cliente</a>
+            </div>
+        </div>
+
+        <div class="hero-panel">
+            <div class="panel-label">Fluxo principal</div>
+            <div class="flow-item">
+                <span>01</span>
+                <strong>Cliente</strong>
+                <small>Dados pessoais e contato</small>
+            </div>
+            <div class="flow-item">
+                <span>02</span>
+                <strong>Produto</strong>
+                <small>Valor, categoria e status</small>
+            </div>
+            <div class="flow-item">
+                <span>03</span>
+                <strong>Vínculo</strong>
+                <small>Produto associado ao cliente</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-grid">
+        <a class="dashboard-card" asp-controller="Clients" asp-action="Index">
+            <span class="card-tag">Clientes</span>
+            <strong>Consultar clientes</strong>
+            <small>Acesse a listagem, detalhes, edição e exclusão.</small>
+        </a>
+        <a class="dashboard-card featured" asp-controller="Products" asp-action="Index">
+            <span class="card-tag">Produtos</span>
+            <strong>Gerenciar produtos</strong>
+            <small>Cadastre produtos e selecione o cliente responsável.</small>
+        </a>
+        <div class="dashboard-card muted-card">
+            <span class="card-tag">Banco em memória</span>
+            <strong>Execução rápida</strong>
+            <small>Dados disponíveis enquanto a aplicação estiver aberta.</small>
+        </div>
+    </div>
+</section>
