@@ -1,5 +1,4 @@
 using Cadastro.ViewModels;
-using System.Collections.Generic;
 
 namespace Cadastro.Interfaces
 {

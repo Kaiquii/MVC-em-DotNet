@@ -1,6 +1,5 @@
 using Cadastro.Interfaces;
 using Cadastro.ViewModels;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cadastro.Controllers

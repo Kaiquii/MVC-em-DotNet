@@ -1,6 +1,6 @@
+using System.Diagnostics;
 using Cadastro.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace Cadastro.Controllers
 {

@@ -4,8 +4,6 @@ using Cadastro.Domain.Interfaces;
 using Cadastro.Interfaces;
 using Cadastro.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Cadastro.Services
 {

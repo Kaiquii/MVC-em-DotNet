@@ -1,8 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Cadastro.Domain.Interfaces;
+using Cadastro.Infrastructure.Data.Repositories;
+using Cadastro.Interfaces;
+using Cadastro.Services;
 
 namespace Cadastro.Infrastructure.ExtensionMethods
 {
@@ -11,8 +10,8 @@ namespace Cadastro.Infrastructure.ExtensionMethods
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
 
-            services.AddTransient<Interfaces.IClientViewModelService, Services.ClientViewModelService>();
-            services.AddTransient<Interfaces.IProductViewModelService, Services.ProductViewModelService>();
+            services.AddTransient<IClientViewModelService, ClientViewModelService>();
+            services.AddTransient<IProductViewModelService, ProductViewModelService>();
 
 
             return services;
@@ -20,9 +19,9 @@ namespace Cadastro.Infrastructure.ExtensionMethods
 
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            services.AddTransient<Domain.Interfaces.ICategoryRepository, Data.Repositories.CategoryRepository>();
-            services.AddTransient<Domain.Interfaces.IClientRepository, Data.Repositories.ClientRepository>();
-            services.AddTransient<Domain.Interfaces.IProductRepository, Data.Repositories.ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
 
 
             return services;
